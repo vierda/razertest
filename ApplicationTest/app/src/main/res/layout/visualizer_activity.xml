@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="@string/customize_levels"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/custom_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_title"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="@string/custom_level_desc"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/plus_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/custom_desc"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="@string/plus_9_db"
+                android:textColor="@android:color/white"/>
+
+
+            <RelativeLayout
+                android:id="@+id/visual_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/plus_nine">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/sixty"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_1"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/two_hundred_fifty"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_2"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/five_hundred"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_3"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/one_k"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_4"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/two_k"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_5"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/four_k"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_6"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/eight_k"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_7"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/AppTheme.TextVisual"
+                            android:text="@string/sixteen_k"/>
+
+                        <com.razer.demo.applicationtest.common.widget.VerticalSeekBar
+                            android:id="@+id/seek_bar_8"
+                            android:layout_width="30dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/normal_margin"
+                            android:progress="50"
+                            android:progressBackgroundTint="@color/green_background"
+                            android:progressTint="@color/green"
+                            android:thumbTint="@color/green"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/heirtz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/normal_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTheme.TextVisual"
+                        android:text="@string/hertz"/>
+
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/normal_margin">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/arrow"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/heirtz">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="35dp"
+                        android:background="@color/light_grey"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/minus_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/visual_container"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="@string/minus_9_db"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/select_preset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minus_nine"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/select_preset"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/select_preset_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_preset"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/select_preset_desc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/visualizer_indicator"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_preset_desc"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/game_button"
+                    style="@style/AppTheme.ButtonVisualizer"
+                    android:text="@string/game"/>
+
+                <Button
+                    android:id="@+id/movie_button"
+                    style="@style/AppTheme.ButtonVisualizer"
+                    android:layout_centerInParent="true"
+                    android:text="@string/movie"/>
+
+                <Button
+                    android:id="@+id/music_button"
+                    style="@style/AppTheme.ButtonVisualizer"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/music"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

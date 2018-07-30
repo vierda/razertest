@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="button_width">250dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+    <dimen name="button_text_size">18dp</dimen>
+    <dimen name="button_visual_text_size">15dp</dimen>
+    <dimen name="grid_height">200dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="small_margin">3dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="edit_text_height">100dp</dimen>
+    <dimen name="image_capture">300dp</dimen>
+    <dimen name="image_width">200dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="visualizer_indicator">12sp</dimen>
+</resources>

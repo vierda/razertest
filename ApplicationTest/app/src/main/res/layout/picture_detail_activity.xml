@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/normal_margin"
+            android:scaleType="centerCrop"/>
+
+
+        <TextView
+            android:id="@+id/picture_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edit_picture_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@drawable/edit_text_border"
+            android:gravity="left"
+            android:hint="@string/edit_description"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="@dimen/normal_margin"
+            android:textCursorDrawable="@null"/>
+
+        <Button
+            android:id="@+id/save_description"
+            style="@style/AppTheme.Button"
+            android:layout_margin="@dimen/normal_margin"
+            android:text="@string/save_description"/>
+    </LinearLayout>
+
+
+</ScrollView>
+
